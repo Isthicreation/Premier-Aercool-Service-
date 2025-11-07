@@ -1,0 +1,224 @@
+/* Enhanced styles for better title visibility */
+.site-header {
+  background: linear-gradient(to right, rgba(37,99,235,0.85), rgba(59,130,246,0.85), rgba(124,58,237,0.85));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.site-header.scrolled {
+  background: linear-gradient(to right, rgba(37,99,235,0.98), rgba(59,130,246,0.98), rgba(124,58,237,0.98));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.site-header .brand {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  position: relative;
+  /* Vibrant multi-color gradient */
+  background: linear-gradient(
+    to right,
+    #38bdf8,
+    #818cf8,
+    #c084fc,
+    #38bdf8
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Enhanced shadow effects */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  /* Bright glow effect */
+  text-shadow: 
+    0 0 30px rgba(56, 189, 248, 0.5),
+    0 0 60px rgba(56, 189, 248, 0.3);
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+/* Add a subtle hover effect */
+.site-header .brand:hover {
+  animation-play-state: paused;
+  text-shadow: 
+    0 0 40px rgba(56, 189, 248, 0.7),
+    0 0 80px rgba(56, 189, 248, 0.5);
+}
+
+/* Hero section enhancements */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+}
+
+/* Decorative shapes */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(56,189,248,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(124,58,237,0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+/* Animated geometric shapes */
+.shape {
+  position: absolute;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.shape-1 {
+  top: 10%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morphing 15s ease-in-out infinite;
+}
+
+.shape-2 {
+  bottom: 10%;
+  right: 5%;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(-45deg, #06b6d4, #3b82f6);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morphing 12s ease-in-out infinite reverse;
+}
+
+@keyframes morphing {
+  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+  50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+  75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(56,189,248,0.1) 0%, transparent 50%);
+  z-index: 0;
+}
+
+.hero-title {
+  font-size: 5.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  /* Bright gradient with multiple colors */
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #60a5fa 25%,
+    #38bdf8 50%,
+    #818cf8 75%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Stronger text shadow for better depth */
+  text-shadow: 
+    0 0 40px rgba(56, 189, 248, 0.5),
+    0 0 80px rgba(56, 189, 248, 0.3),
+    0 2px 4px rgba(0,0,0,0.3);
+  /* Add an outline effect */
+  -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+}
+
+/* Add a glowing effect behind the title */
+.hero-title::before {
+  content: '';
+  position: absolute;
+  inset: -20px -40px;
+  background: radial-gradient(
+    circle at center,
+    rgba(56, 189, 248, 0.15),
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+/* Animated gradient background */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-title {
+  background-size: 400% 400%;
+  animation: 
+    float 6s ease-in-out infinite,
+    shine 8s ease-in-out infinite;
+}
+
+.hero-title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: blur(8px);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Make sure links and text are visible */
+.nav-link {
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.hero-description {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
