@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premier Aerocool Services</title>
+    <meta name="description" content="Premier Aerocool Services – Fast, Reliable, Affordable air conditioning services and maintenance in KSA." />
+    <link rel="icon" href="assets/icons/snowflake.svg" />
+    <meta property="og:title" content="Premier Aerocool Services" />
+    <meta property="og:description" content="Fast, Reliable, Affordable A/C services. Maintenance, projects, energy efficiency." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&auto=format&fit=crop" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- All enhanced styles are now combined in styles.css -->
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="background-anim" aria-hidden="true"></div>
+    <div id="particles" class="particles" aria-hidden="true"></div>
+    
+    <!-- Sticky Call Button -->
+    <a href="tel:0561886137" class="sticky-call">
+      <svg class="call-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span class="call-text">Call Now</span>
+    </a>
+
+    <!-- Header / Navbar -->
+    <header class="site-header sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <img src="assets/icons/snowflake.svg" class="h-8 w-8" alt="Premier Aerocool" />
+          <span class="brand grad-text font-semibold tracking-wide">Premier Aerocool</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-primary-700" data-i18n="nav_services">Services</a>
+          <a href="#projects" class="hover:text-primary-700" data-i18n="nav_projects">Projects</a>
+          <a href="#clients" class="hover:text-primary-700" data-i18n="nav_clients">Clients</a>
+          <a href="#about" class="hover:text-primary-700" data-i18n="nav_about">About</a>
+          <a href="#contact" class="hover:text-primary-700" data-i18n="nav_contact">Contact</a>
+          <button id="langToggle" class="px-3 py-1 rounded border text-xs" aria-label="Toggle language">العربية</button>
+          <button id="themeToggle" class="ml-2 px-3 py-1 rounded border text-xs" aria-label="Toggle theme">🌙</button>
+          <a href="tel:0561886137" class="ml-3 header-cta btn-primary">Call</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center p-2" aria-label="Open Menu">
+          <span class="i-menu w-6 h-6"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+        <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="#services" class="py-1" data-i18n="nav_services">Services</a>
+          <a href="#projects" class="py-1" data-i18n="nav_projects">Projects</a>
+          <a href="#clients" class="py-1" data-i18n="nav_clients">Clients</a>
+          <a href="#about" class="py-1" data-i18n="nav_about">About</a>
+          <a href="#contact" class="py-1" data-i18n="nav_contact">Contact</a>
+          <button id="langToggleMobile" class="mt-1 px-3 py-1 rounded border text-xs self-start">العربية</button>
+          <button id="themeToggleMobile" class="px-3 py-1 rounded border text-xs self-start mt-1">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative isolate hero">
+      <img src="https://images.unsplash.com/photo-1547658718-1cdaa0853228?w=2000&q=80&auto=format&fit=crop" alt="HVAC rooftop units" class="absolute inset-0 w-full h-full object-cover opacity-30 kb" loading="eager" />
+      <!-- Decorative color blobs for richer hero -->
+      <svg class="hero-blob" viewBox="0 0 800 400" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0%" stop-color="#06b6d4" stop-opacity=".28"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity=".28"/>
+          </linearGradient>
+        </defs>
+        <path d="M0 300 C150 220 350 380 500 300 C650 220 850 380 1000 300 L1000 0 L0 0 Z" fill="url(#g1)" />
+      </svg>
+      <!-- Floating decorative snowflakes -->
+      <img src="assets/icons/snowflake.svg" class="float left-6 top-6 w-8 h-8" alt="" aria-hidden="true" />
+      <img src="assets/icons/snowflake.svg" class="float right-10 top-20 w-10 h-10" style="animation-delay:2s" alt="" aria-hidden="true" />
+      <img src="assets/icons/snowflake.svg" class="float right-24 bottom-6 w-7 h-7" style="animation-delay:4s" alt="" aria-hidden="true" />
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+        <div class="max-w-2xl">
+          <span class="badge" data-i18n="hero_sub">Fast · Reliable · Affordable</span>
+          <h1 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 grad-text">
+            <span data-i18n="hero_title">Your one‑stop shop for air conditioning needs</span>
+          </h1>
+          <p class="mt-4 text-slate-700"><span id="heroRotator" class="font-semibold hero-rotator"></span></p>
+          <div class="mt-6 flex flex-wrap gap-3 items-center">
+            <a href="tel:0561886137" class="btn-gradient" data-i18n="cta_call">Call Us</a>
+            <a href="https://wa.me/971561886137" class="btn-outline" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+            <a href="#contact" class="ml-2 btn-ghost" data-i18n="cta_quote">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(14,165,233,.15)" d="M0 32l48 5.3C96 43 192 53 288 48s192-27 288-32 192 5 288 16 192 21 288 16 192-27 288-37.3V56H0z"/></svg>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+        
+        <!-- Service Filter -->
+        <div class="service-filter">
+          <button class="filter-btn active" data-filter="all">All Services</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="card card-accent reveal tilt residential commercial" data-reveal="0"><h3 class="card-title" data-i18n="svc_design">Central HVAC Designing</h3><p data-i18n="svc_design_desc">Custom HVAC solutions designed to international standards.</p></div>
+          <div class="card card-accent reveal tilt commercial" data-reveal="1"><h3 class="card-title" data-i18n="svc_energy">Energy Efficiency Services</h3><p data-i18n="svc_energy_desc">Audits, smart upgrades, and heat recovery integration.</p></div>
+          <div class="card card-accent reveal tilt commercial" data-reveal="2"><h3 class="card-title" data-i18n="svc_pm">Projects Management</h3><p data-i18n="svc_pm_desc">Execution management, supervision, and risk control.</p></div>
+          <div class="card card-accent reveal tilt residential commercial" data-reveal="3"><h3 class="card-title" data-i18n="svc_comm">System Commissioning</h3><p data-i18n="svc_comm_desc">Pre‑startup inspection, performance tuning, documentation.</p></div>
+          <div class="card card-accent reveal tilt maintenance residential commercial" data-reveal="4"><h3 class="card-title" data-i18n="svc_maint">Integrated Maintenance</h3><p data-i18n="svc_maint_desc">Operation and maintenance for major projects.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section bg-slate-100">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects_title">Our Projects</h2>
+        <div class="tags">
+          <span class="tag">Chiller related activities</span>
+          <span class="tag">Installation of Package units</span>
+          <span class="tag">Installation of split units</span>
+          <span class="tag">Duct works</span>
+          <span class="tag">Porter Cabins</span>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-ducts.jpg" alt="Duct works – galvanized ducts and fittings" loading="lazy" /><figcaption class="figcap">Duct works</figcaption></figure>
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-chiller.jpg" alt="Chiller plant – pumps and piping" loading="lazy" /><figcaption class="figcap">Chiller related activities</figcaption></figure>
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-maintenance-1.jpg" alt="Package unit maintenance" loading="lazy" /><figcaption class="figcap">Installation of Package units</figcaption></figure>
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-split-install.jpg" alt="Split unit installation" loading="lazy" /><figcaption class="figcap">Installation of split units</figcaption></figure>
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-maintenance-2.jpg" alt="A/C service and testing" loading="lazy" /><figcaption class="figcap">A/C maintenance</figcaption></figure>
+          <figure class="figure"><img class="gallery kb" src="assets/images/project-porta-cabin.jpg" alt="Porta cabins with A/C units" loading="lazy" /><figcaption class="figcap">Porter cabins</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="clients_title">Our Customers</h2>
+        <div class="logos items-start">
+          <figure class="flex flex-col items-center gap-2">
+            <img src="assets/images/logo-mcdonalds.png" alt="McDonald's" class="logo mx-auto object-contain" loading="lazy" />
+            <figcaption class="logo-cap">ماكدونالدز<br/>McDonald’s</figcaption>
+          </figure>
+          <figure class="flex flex-col items-center gap-2">
+            <img src="assets/images/logo-dpworld.png" alt="DP World" class="logo mx-auto object-contain" loading="lazy" />
+            <figcaption class="logo-cap">دي بي وورلد<br/>DP World</figcaption>
+          </figure>
+          <figure class="flex flex-col items-center gap-2">
+            <img src="assets/images/logo-smsa.png" alt="SMSA" class="logo mx-auto object-contain" loading="lazy" />
+            <figcaption class="logo-cap">سمسا<br/>SMSA</figcaption>
+          </figure>
+          <figure class="flex flex-col items-center gap-2">
+            <img src="assets/images/logo-iicc.png" alt="IICC" class="logo mx-auto object-contain" loading="lazy" />
+            <figcaption class="logo-cap">آي آي سي سي<br/>IICC</figcaption>
+          </figure>
+        </div>
+        <p class="text-sm text-slate-500 mt-3">Logos are for reference only; trademarks belong to their respective owners.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section bg-slate-50">
+      <div class="container">
+        <h2 class="section-title" data-i18n="testimonials_title">What our customers say</h2>
+        <div class="testimonials-wrap">
+          <button class="testi-nav prev" aria-label="Previous testimonial">‹</button>
+          <div class="testimonials">
+            <blockquote class="testi-item" data-index="0">
+              <p>"Fast, professional, and the team fixed our chiller issue the same day. Highly recommended."</p>
+              <cite>— Ahmed, Facility Manager</cite>
+            </blockquote>
+            <blockquote class="testi-item" data-index="1">
+              <p>"Their maintenance contract saved us money and reduced downtime dramatically."</p>
+              <cite>— Sarah, Hotel Operations</cite>
+            </blockquote>
+            <blockquote class="testi-item" data-index="2">
+              <p>"Excellent workmanship and communication. The new installation performs better than expected."</p>
+              <cite>— Khalid, Project Engineer</cite>
+            </blockquote>
+          </div>
+          <button class="testi-nav next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section bg-slate-100">
+      <div class="container grid gap-6 lg:grid-cols-2 items-center">
+        <div>
+          <h2 class="section-title" data-i18n="about_title">About the Company</h2>
+          <p class="mt-3" data-i18n="about_body">Premier Aerocool Service is a leading provider of air conditioning and central cooling systems in the Kingdom, serving airports, commercial complexes, hospitals, hotels, and factories with a skilled engineering team.</p>
+          <h3 class="mt-6 font-semibold" data-i18n="vision_title">Our Vision</h3>
+          <p class="mt-2" data-i18n="vision_body">To be a trusted provider of integrated cooling solutions, delivering superior performance, sustainability, and reliability.</p>
+          <h3 class="mt-6 font-semibold" data-i18n="message_title">Our Message</h3>
+          <p class="mt-2" data-i18n="message_body">We adopt innovative systems aligned with global technologies to support the Kingdom’s sustainable development.</p>
+        </div>
+        <img src="assets/images/about us.jpg" alt="Rooftop units" class="rounded-lg shadow kb" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are common AC problems I should watch out for?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Common AC issues include: unusual noises, weak airflow, warm air blowing, water leaks, and frequent cycling. If you notice any of these signs, it's best to contact our professional team for inspection.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How often should I service my AC unit?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We recommend servicing your AC unit at least twice a year: before summer and winter seasons. Regular maintenance ensures optimal performance, prevents breakdowns, and extends the life of your system.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What areas do you service in Jeddah?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We service all areas in Jeddah, with our main branch in Al Nuzhah District. We provide prompt service across residential and commercial areas throughout the city.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer emergency AC repair services?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer 24/7 emergency AC repair services. Our team is always ready to respond to urgent cooling system issues to ensure your comfort and safety.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What maintenance packages do you offer?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We offer various maintenance packages including annual contracts, quarterly inspections, and custom maintenance plans for both residential and commercial clients. Contact us for a customized quote.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How can I improve my AC's efficiency?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Regular maintenance, clean filters, proper temperature settings, and ensuring good airflow around your unit can improve efficiency. Our team can provide a detailed energy efficiency assessment for your system.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="space-y-3">
+            <p><span class="font-semibold" data-i18n="contact_phone">Phone:</span> <a class="link" href="tel:0561886137">0561886137</a></p>
+            <p><span class="font-semibold">WhatsApp:</span> <a class="link" href="https://wa.me/971561886137" target="_blank" rel="noopener">+971 56 188 6137</a></p>
+            <p><span class="font-semibold" data-i18n="contact_email">Email:</span> <a class="link" href="mailto:admin@premieraerocoolservices.com">admin@premieraerocoolservices.com</a></p>
+            <p><span class="font-semibold" data-i18n="contact_address">Address:</span> Muhammed Saeed Naset Branch, Al Nuzhah Dist, 7590, Jeddah, KSA</p>
+            <div class="flex gap-3 pt-2">
+              <a href="tel:0561886137" class="btn-primary" data-i18n="cta_call">Call Us</a>
+              <a href="https://wa.me/971561886137" class="btn-ghost" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+            </div>
+          </div>
+          <img src="assets/images/contact.jpg" alt="Team at work" class="rounded-lg shadow kb" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-8 border-t border-slate-200 text-sm text-center">
+      <div class="cta max-w-7xl mx-auto rounded-xl my-6 px-6 py-10 text-left">
+        <div class="grid gap-4 sm:grid-cols-3 items-center">
+          <div class="sm:col-span-2">
+            <h3 class="text-2xl font-extrabold">Ready for expert A/C service?</h3>
+            <p class="opacity-90 mt-1">Fast response, reliable technicians, and affordable contracts.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="tel:0561886137" class="btn-gradient">Call 0561886137</a>
+            <a href="https://wa.me/971561886137" target="_blank" rel="noopener" class="btn-outline">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 text-slate-600">&copy; <span id="year"></span> Premier Aerocool Services</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
